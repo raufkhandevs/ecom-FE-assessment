@@ -1,6 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import { useDispatch } from "react-redux";
-import { addCart } from "../redux/action";
 
 import Loading from "./Loading";
 import ProductCard from "./ProductCard";
@@ -11,8 +9,6 @@ const Products = () => {
   const [filter, setFilter] = useState(data);
   const [loading, setLoading] = useState(false);
   const componentMounted = useRef(true);
-
-  const dispatch = useDispatch();
 
   useEffect(() => {
     const getProducts = async () => {

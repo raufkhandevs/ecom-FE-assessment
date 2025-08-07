@@ -3,8 +3,6 @@
   "outputDirectory": "build",
   "installCommand": "npm install --force",
   "framework": "create-react-app",
-  "ignoreCommand": "echo 'Skipping backend deployment'",
-  "functions": {},
   "rewrites": [
     {
       "source": "/(.*)",
